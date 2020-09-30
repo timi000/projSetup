@@ -1,6 +1,5 @@
 import pandas as pd
 import datetime as dt
-import matplotlib as plt
 from sqlalchemy import create_engine
 
 path="Resources/googletrends.csv"
