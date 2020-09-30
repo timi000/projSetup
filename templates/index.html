@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<<<<<<< HEAD
+  <meta charset="utf-8">
+  <title>Covid-19 Visualizations</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+    integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+    crossorigin="" />
+
+  <!-- Our CSS -->
+  <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <!--navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="choropleth">Interactive Map <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="trends">Trends </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            References
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item"
+              href="https://health-infobase.canada.ca/covid-19/?stat=rate&measure=tested#a2">Choropleth data</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item"
+              href="https://trends.google.com/trends/explore?geo=CA&q=bike,CERB,mask,patio,zoom">Google trends</a>
+            <div class="dropdown-divider"></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--main body starts-->
+  <div class="mainpage" id="intro">
+    <h1>Covid Trend Analysis</h1>
+    <p class="main-text">
+      Tasked with analyzing data of our choice, we have come together to bring insight on trends during the Covid-19
+      pandemic.
+      Among finding correlations for covid cases by province over the last 8 months, we've gathered a trend analysis
+      most searched keywords during the pandemic.
+      Use the links provided above to explore the various forms of data we have recovered. Be sure to note our data
+      timeline ranges from
+      January 1st, 2020 until September 18th, 2020. This website is powered by our "homemade" RESTful Api and data we've
+      gathered from our References
+      (see References) for more information.
+
+    </p>
+  </div>
+
+
+
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h4 class="text-center">© copyright META-B 2020 © </h4>
+        </div>
+      </div>
+  </footer>
+  </div>
+  </div>
+
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+    integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+    crossorigin=""></script>
+  <script src="https://d3js.org/d3.v4.js"></script>
+  <!-- API key -->
+  <script type="text/javascript" src="../static/js/config.js"></script>
+  <!-- Our JS -->
+  <script type="text/javascript" src="../static/js/logic.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+=======
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Explore Mars</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="jumbotron text-center">
+      <h1 >Mission to Mars</h1>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
+    </div>
+ 
+   <div class="row">
+     <h1> Latest Headlines</h1>
+     <h3> {{mars.news_title}} </h3>
+     <p>{{mars.news_p}}</p>
+   </div>
+  <div class="row">
+    <div class= "col-lg-8 col-md-12">
+      <h1 style="text-align: center;">Feature image </h1>
+      <img src="{{mars.feature_image_url}}" alt="Mars m"  style="max-width: 100%; max-height: 100%;">
+     </div>
+     <div class= "col-lg-4 col-md-12">
+       <div class="row">
+         <div class="card" >
+     
+          <div class="card-body">
+            <h4 class="card-title"> Latest Tweets</h4>
+            <p class="card-text"> {{mars.tweet}} </p>
+
+          </div>
+  
+         </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+          <!-- Mars Facts -->
+          <div class="row" >
+            <h4>Mars Facts</h4>
+            {{ mars.html_table | safe }}
+          </div>
+        </div>
+        
+        </div>
+    </div>
+
+  </div>
+  <div class="row">
+    <h2 style="text-align: center;"> Mars Hemisphere </h2>
+   <hr>
+ </div>
+ <div class="row">
+    {% for m in mars.hemisphere%}
+   <div class="col-lg-6 col-sm-12" >
+     <div class="card" >
+     
+       <div class="card-body">
+        <h4 class="card-title"> {{m.titles}}</h4>
+         </div>
+         <img class="image-fluid"src="{{m.image_url }}" alt="Mars" style="width: 400px; height:400px;">
+        </div>
+       </div>
+    {% endfor %}
+
+     
+   
+
+ </div>
+
+</div>
+</body>
+
+</html>
+>>>>>>> ca4b36b0d971b3715dac9dabccce28b2a3b1bba5
