@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-<<<<<<< HEAD
   <meta charset="utf-8">
   <title>Covid-19 Visualizations</title>
 
@@ -106,80 +105,3 @@
 </body>
 
 </html>
-=======
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Explore Mars</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-</head>
-
-<body>
-  <div class="container-fluid">
-    <div class="jumbotron text-center">
-      <h1 >Mission to Mars</h1>
-      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
-    </div>
- 
-   <div class="row">
-     <h1> Latest Headlines</h1>
-     <h3> {{mars.news_title}} </h3>
-     <p>{{mars.news_p}}</p>
-   </div>
-  <div class="row">
-    <div class= "col-lg-8 col-md-12">
-      <h1 style="text-align: center;">Feature image </h1>
-      <img src="{{mars.feature_image_url}}" alt="Mars m"  style="max-width: 100%; max-height: 100%;">
-     </div>
-     <div class= "col-lg-4 col-md-12">
-       <div class="row">
-         <div class="card" >
-     
-          <div class="card-body">
-            <h4 class="card-title"> Latest Tweets</h4>
-            <p class="card-text"> {{mars.tweet}} </p>
-
-          </div>
-  
-         </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-          <!-- Mars Facts -->
-          <div class="row" >
-            <h4>Mars Facts</h4>
-            {{ mars.html_table | safe }}
-          </div>
-        </div>
-        
-        </div>
-    </div>
-
-  </div>
-  <div class="row">
-    <h2 style="text-align: center;"> Mars Hemisphere </h2>
-   <hr>
- </div>
- <div class="row">
-    {% for m in mars.hemisphere%}
-   <div class="col-lg-6 col-sm-12" >
-     <div class="card" >
-     
-       <div class="card-body">
-        <h4 class="card-title"> {{m.titles}}</h4>
-         </div>
-         <img class="image-fluid"src="{{m.image_url }}" alt="Mars" style="width: 400px; height:400px;">
-        </div>
-       </div>
-    {% endfor %}
-
-     
-   
-
- </div>
-
-</div>
-</body>
-
-</html>
->>>>>>> ca4b36b0d971b3715dac9dabccce28b2a3b1bba5
