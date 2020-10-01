@@ -30,9 +30,10 @@ p{
    padding-right: 50px; 
 }
 footer{
-    position: absolute;
-    left:1%;
-    top:99%
+    position: fixed;
+    left: 0;
+    bottom:0;
+    width: 100%;
 }
 .mainpage{
     background-image: url(https://www.rehabmagazine.ca/wp-content/uploads/coronavirus-3992933.jpg) ;
